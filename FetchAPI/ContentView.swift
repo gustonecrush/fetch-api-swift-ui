@@ -37,6 +37,31 @@ struct ContentView: View {
                     }
                     .frame(height: 100).padding().background(Color.blue).cornerRadius(20)
                 }
+                
+                // column 2
+                HStack {
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Image(systemName: "bed.double.fill").foregroundColor(Color.white)
+                            Text("Dirawat").font(.headline).foregroundColor(Color.white)
+                            Text("\(data.jumlah_sembuh)").font(.headline).foregroundColor(Color.white)
+                        }
+                        Spacer()
+                    }
+                    .frame(height: 100).padding().background(Color.pink).cornerRadius(20)
+                    
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Image(systemName: "plus.circle").foregroundColor(Color.white)
+                            Text("Positif").font(.headline).foregroundColor(Color.white)
+                            Text("\(data.jumlah_positif)").font(.headline).foregroundColor(Color.white)
+                        }
+                        Spacer()
+                    }
+                    .frame(height: 100).padding().background(Color.blue).cornerRadius(20)
+                }
             }
         }
     }
