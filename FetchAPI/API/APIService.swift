@@ -25,6 +25,7 @@ class APIService: ObservableObject {
             if let result = result {
                 DispatchQueue.main.async {
                     self.datatotal = [result.update.total]
+                    print(result)
                 }
             }
         }.resume()

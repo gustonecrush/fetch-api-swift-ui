@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var fetch = APIService()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Hello, world!").onAppear {
+            print(fetch.datatotal)
+        }
     }
 }
 
