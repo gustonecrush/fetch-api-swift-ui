@@ -9,7 +9,12 @@ import Foundation
 import SwiftUI
 
 class APIService: ObservableObject {
-    @Published var datatotal = [Total]()
+    let objectWillChange = ObjectWillChangePublisher()
+    @Published var datatotal = [Total]() {
+        willSet {
+            objectWillChange.send()
+        }
+    }
     
     init() {
         guard let url = URL(string: "https://data.covid19.go.id/public/api/update.json") else {
@@ -25,7 +30,7 @@ class APIService: ObservableObject {
             if let result = result {
                 DispatchQueue.main.async {
                     self.datatotal = [result.update.total]
-                    print(result)
+                    print(self.datatotal)
                 }
             }
         }.resume()
