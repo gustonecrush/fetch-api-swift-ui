@@ -66,6 +66,7 @@ struct ContentView: View {
                     Spacer()
                 }
             }.padding()
+                .navigationBarTitle("Covid19 Data")
         }
     }
 }
