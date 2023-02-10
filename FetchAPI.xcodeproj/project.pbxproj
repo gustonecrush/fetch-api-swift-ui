@@ -12,6 +12,7 @@
 		0930F85829969A7500FE6966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0930F85729969A7500FE6966 /* Assets.xcassets */; };
 		0930F85B29969A7500FE6966 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0930F85A29969A7500FE6966 /* Preview Assets.xcassets */; };
 		0930F86429969B0D00FE6966 /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930F86329969B0C00FE6966 /* Covid.swift */; };
+		0930F86629969C6A00FE6966 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930F86529969C6A00FE6966 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0930F85729969A7500FE6966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0930F85A29969A7500FE6966 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0930F86329969B0C00FE6966 /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		0930F86529969C6A00FE6966 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 		0930F85229969A7100FE6966 /* FetchAPI */ = {
 			isa = PBXGroup;
 			children = (
-				0930F86229969AEA00FE6966 /* Model */,
 				0930F86129969AD300FE6966 /* API */,
+				0930F86229969AEA00FE6966 /* Model */,
 				0930F85329969A7100FE6966 /* FetchAPIApp.swift */,
 				0930F85529969A7100FE6966 /* ContentView.swift */,
 				0930F85729969A7500FE6966 /* Assets.xcassets */,
@@ -74,6 +76,7 @@
 		0930F86129969AD300FE6966 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0930F86529969C6A00FE6966 /* APIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				0930F85629969A7100FE6966 /* ContentView.swift in Sources */,
 				0930F86429969B0D00FE6966 /* Covid.swift in Sources */,
+				0930F86629969C6A00FE6966 /* APIService.swift in Sources */,
 				0930F85429969A7100FE6966 /* FetchAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
