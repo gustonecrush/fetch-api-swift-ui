@@ -14,11 +14,11 @@ struct ContentView: View {
         VStack {
             ForEach(fetch.datatotal) { data in
                 // column 1
-                HStack {
+                HStack(spacing: 10) {
                     HStack {
                         Spacer()
                         VStack {
-                            Image(systemName: "hear.fill").foregroundColor(Color.white)
+                            Image(systemName: "heart.fill").foregroundColor(Color.white)
                             Text("Sembuh").font(.headline).foregroundColor(Color.white)
                             Text("\(data.jumlah_sembuh)").font(.headline).foregroundColor(Color.white)
                         }
@@ -29,7 +29,7 @@ struct ContentView: View {
                     HStack {
                         Spacer()
                         VStack {
-                            Image(systemName: "plus.circle").foregroundColor(Color.white)
+                            Image(systemName: "plus.circle.fill").foregroundColor(Color.white)
                             Text("Positif").font(.headline).foregroundColor(Color.white)
                             Text("\(data.jumlah_positif)").font(.headline).foregroundColor(Color.white)
                         }
@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
                 
                 // column 2
-                HStack {
+                HStack(spacing:10) {
                     HStack {
                         Spacer()
                         VStack {
@@ -49,21 +49,22 @@ struct ContentView: View {
                         }
                         Spacer()
                     }
-                    .frame(height: 100).padding().background(Color.pink).cornerRadius(20)
+                    .frame(height: 100).padding().background(Color.orange).cornerRadius(20)
                     
                     HStack {
                         Spacer()
                         VStack {
-                            Image(systemName: "plus.circle").foregroundColor(Color.white)
-                            Text("Positif").font(.headline).foregroundColor(Color.white)
+                            Image(systemName: "waveform.patch.ecg").foregroundColor(Color.white)
+                            Text("Meninggal").font(.headline).foregroundColor(Color.white)
                             Text("\(data.jumlah_positif)").font(.headline).foregroundColor(Color.white)
                         }
                         Spacer()
                     }
-                    .frame(height: 100).padding().background(Color.blue).cornerRadius(20)
+                    .frame(height: 100).padding().background(Color.pink).cornerRadius(20)
                 }
+                Spacer()
             }
-        }
+        }.padding()
     }
 }
 
